@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<InvariantGlobalization>true</InvariantGlobalization>
+		<EnableRequestDelegateGenerator>true</EnableRequestDelegateGenerator>
+		<!-- Disables server GC to reduce memory consumption -->
+		<ServerGarbageCollection>false</ServerGarbageCollection>
+		<!-- Using invariant globalization reduces app sizes -->
+		<InvariantGlobalization>true</InvariantGlobalization>
+		<!-- Enables always publishing as AOT -->
+		<PublishAot>true</PublishAot>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerfileContext>..\..\..</DockerfileContext>
+		<DockerComposeProjectPath>..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
+	</PropertyGroup>
+
+	<ItemGroup> 
+	  <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" /> 
+	</ItemGroup>
+
+</Project>

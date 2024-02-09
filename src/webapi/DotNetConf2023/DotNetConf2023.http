@@ -1,0 +1,17 @@
+@DotNetConf2023_HostAddress = http://localhost:5000
+
+###
+GET {{DotNetConf2023_HostAddress}}/todos/
+Accept: application/json
+
+###
+
+GET {{DotNetConf2023_HostAddress}}/todos/1
+Accept: application/json
+
+###
+
+GET {{DotNetConf2023_HostAddress}}/salutes/TEST
+Accept: application/json
+
+###
